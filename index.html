@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>損益表系統 — 全真一對一｜輕巧、專業的桌面損益表軟體</title>
+<meta name="description" content="專為補習班設計的桌面損益表軟體:即時計算、多分校、季報、預算對比、資產負債表、Excel 匯入匯出、自動更新。免安裝、離線可用。">
+<link rel="icon" href="icon.png">
+<style>
+  :root{
+    --primary:#533afd;--primary-deep:#4434d4;--primary-soft:#eef0ff;
+    --ink:#0d253d;--ink-2:#273951;--mute:#64748d;--canvas:#fff;--soft:#f6f9fc;--line:#e3e8ee;
+    --num:"SF Mono","Consolas",monospace;--ui:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--ui);color:var(--ink);background:var(--canvas);line-height:1.6}
+  a{color:var(--primary);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  /* nav */
+  nav{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+  nav img{width:34px;height:34px;border-radius:8px}
+  nav .name{font-weight:700;font-size:17px}
+  nav .ver{margin-left:auto;color:var(--mute);font-size:13px;font-family:var(--num)}
+  /* hero */
+  .hero{text-align:center;padding:64px 0 40px;background:
+     radial-gradient(1200px 320px at 50% -40px, #eef0ff 0%, transparent 70%)}
+  .hero h1{font-size:42px;line-height:1.15;margin:0 0 14px;letter-spacing:-.5px}
+  .hero p.lead{font-size:18px;color:var(--ink-2);max-width:620px;margin:0 auto 26px}
+  .btn{display:inline-block;background:var(--primary);color:#fff;font-size:17px;font-weight:600;
+     padding:14px 30px;border-radius:10px;box-shadow:0 6px 18px rgba(83,58,253,.28);transition:.15s}
+  .btn:hover{background:var(--primary-deep);transform:translateY(-1px)}
+  .meta{margin-top:14px;color:var(--mute);font-size:13px}
+  .pill{display:inline-block;background:var(--primary-soft);color:var(--primary-deep);
+     border-radius:999px;padding:4px 12px;font-size:13px;margin:0 4px}
+  /* mock */
+  .mock{max-width:760px;margin:36px auto 0;background:#fff;border:1px solid var(--line);
+     border-radius:14px;box-shadow:0 20px 50px rgba(13,37,61,.12);overflow:hidden;text-align:left}
+  .mock .bar{display:flex;gap:7px;padding:11px 14px;background:var(--soft);border-bottom:1px solid var(--line)}
+  .mock .bar i{width:11px;height:11px;border-radius:50%;background:#d6dbe3;display:inline-block}
+  .mock .body{padding:20px 24px}
+  .mock h3{margin:0 0 12px;font-size:15px}
+  .mock table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .mock td{padding:6px 6px;border-bottom:1px solid var(--line)}
+  .mock td.n{text-align:right;font-family:var(--num)}
+  .mock tr.key td{background:var(--primary-soft);color:var(--primary-deep);font-weight:700}
+  /* sections */
+  section{padding:54px 0}
+  h2.sec{font-size:28px;text-align:center;margin:0 0 8px}
+  p.subsec{text-align:center;color:var(--mute);margin:0 0 34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:20px}
+  .card .ico{width:38px;height:38px;border-radius:9px;background:var(--primary-soft);
+     display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:10px}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card p{margin:0;color:var(--ink-2);font-size:14px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .step{padding:20px;border-radius:12px;background:var(--soft)}
+  .step .no{width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;
+     display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:10px}
+  .cta{background:var(--soft);border-radius:18px;padding:44px;text-align:center;margin:10px 0 0}
+  footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:13px;text-align:center}
+  .note{background:#fff7ed;border:1px solid #fed7aa;color:#b54708;border-radius:10px;
+     padding:12px 16px;font-size:13.5px;max-width:760px;margin:22px auto 0}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <img src="icon.png" alt="logo">
+      <span class="name">損益表系統</span>
+      <span class="ver">v1.0.0</span>
+    </nav>
+  </div>
+
+  <header class="hero"><div class="wrap">
+    <h1>輕巧、專業的<br>桌面損益表軟體</h1>
+    <p class="lead">專為補習班打造。即時計算、多分校管理、季報與趨勢分析、預算對比、資產負債表 ——
+       讓記帳更快,股東檢視更清楚。取代 Excel,免安裝、可離線。</p>
+    <a class="btn" href="https://github.com/jerry200176-png/income-statement-app-releases/releases/latest/download/income-statement.exe">⬇ 免費下載(Windows)</a>
+    <div class="meta">
+      <span class="pill">免安裝</span><span class="pill">離線可用</span>
+      <span class="pill">自動更新</span><span class="pill">Windows 10/11</span>
+    </div>
+
+    <div class="mock">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="body">
+        <h3>台北全真一對一信義分校　·　民國115年5月</h3>
+        <table>
+          <tr><td>營業收入淨額</td><td class="n">677,700</td></tr>
+          <tr><td>營業成本合計</td><td class="n">7,650</td></tr>
+          <tr class="key"><td>營業毛利</td><td class="n">670,050</td></tr>
+          <tr><td>營業費用合計</td><td class="n">451,426</td></tr>
+          <tr class="key"><td>營業淨利</td><td class="n">218,624</td></tr>
+          <tr><td>非營業淨利</td><td class="n">10,200</td></tr>
+          <tr class="key"><td>本期損益</td><td class="n">228,824</td></tr>
+        </table>
+      </div>
+    </div>
+  </div></header>
+
+  <section class="wrap">
+    <h2 class="sec">完整功能,對標專業財務軟體</h2>
+    <p class="subsec">該有的都有,操作卻很簡單</p>
+    <div class="grid">
+      <div class="card"><div class="ico">📊</div><h3>即時損益計算</h3><p>輸入科目金額,毛利、淨利、本期損益即時算出,金額千分位、負數標示清楚。</p></div>
+      <div class="card"><div class="ico">🏫</div><h3>多分校管理</h3><p>各分校資料分開存放,可新增、改名、切換,還能產出全分校合併報表。</p></div>
+      <div class="card"><div class="ico">📈</div><h3>比較與趨勢</h3><p>環比上月、同比去年同月、近 6 月趨勢圖、費用組成,一眼看懂變化。</p></div>
+      <div class="card"><div class="ico">🗓️</div><h3>季報</h3><p>每三個月一季,三月並排 + 季合計,股東檢視更全面。</p></div>
+      <div class="card"><div class="ico">🎯</div><h3>預算對比</h3><p>填入預算,即時比較實際達成率,掌握經營狀況。</p></div>
+      <div class="card"><div class="ico">⚖️</div><h3>資產負債表</h3><p>資產、負債、權益輸入,自動檢核「資產=負債+權益」是否平衡。</p></div>
+      <div class="card"><div class="ico">📥</div><h3>Excel 匯入匯出</h3><p>舊有 Excel 損益表可直接匯入;報表可匯出 Excel、列印或存 PDF。</p></div>
+      <div class="card"><div class="ico">📝</div><h3>變更紀錄</h3><p>每次存檔自動記錄異動明細,帳務有跡可循、更可信。</p></div>
+      <div class="card"><div class="ico">🔄</div><h3>自動更新</h3><p>有新版自動提示,按一下自動下載、安裝、重開,資料不遺失。</p></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="sec">三步驟開始使用</h2>
+    <p class="subsec">零學習成本</p>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><h3>下載並開啟</h3><p>點上方按鈕下載 .exe,雙擊即可開啟,免安裝。</p></div>
+      <div class="step"><div class="no">2</div><h3>輸入或匯入</h3><p>直接輸入每月科目金額,或匯入舊有的 Excel 損益表。</p></div>
+      <div class="step"><div class="no">3</div><h3>檢視與匯出</h3><p>查看報表、比較、圖表,匯出 Excel 或列印給股東。</p></div>
+    </div>
+    <div class="note">💡 提醒:首次開啟若出現「Windows 已保護您的電腦」,點「<b>其他資訊 → 仍要執行</b>」即可(這是未付費簽章程式的正常提示,非病毒)。</div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta">
+      <h2 class="sec">準備好取代 Excel 了嗎?</h2>
+      <p class="subsec">免費下載,馬上開始</p>
+      <a class="btn" href="https://github.com/jerry200176-png/income-statement-app-releases/releases/latest/download/income-statement.exe">⬇ 免費下載(Windows)</a>
+    </div>
+  </section>
+
+  <footer><div class="wrap">
+    損益表系統 v1.0.0　·　專為補習班設計的桌面損益表軟體<br>
+    © 2026　·　資料離線儲存於本機,安全私密
+  </div></footer>
+</body>
+</html>
