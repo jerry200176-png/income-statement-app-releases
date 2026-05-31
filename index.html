@@ -68,6 +68,7 @@
   .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:24px;max-width:1080px;margin:0 auto}
   .shot-card{display:flex;flex-direction:column}
   .shot-card .frame{margin:0;max-width:none;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .frame img{display:block;width:100%;border-radius:9px}
   .shot-card .cap{margin-top:14px}
   .shot-card .cap h3{margin:0 0 4px;font-size:17px;letter-spacing:-.2px}
   .shot-card .cap p{margin:0;color:var(--ink-subtle);font-size:14px}
@@ -126,22 +127,7 @@
     <a class="btn ghost" href="#features">看看功能</a>
     <div class="meta">免安裝　·　離線可用　·　自動更新　·　Windows 10 / 11</div>
 
-    <div class="frame"><div class="shot">
-      <div class="top"><i></i><i></i><i></i><span class="url">損益表系統 — 全真一對一</span></div>
-      <div class="tabs"><span>總覽</span><span class="on">編輯</span><span>年度</span><span>比較</span><span>季報</span><span>合併</span><span>趨勢</span><span>搜尋</span><span>預算</span><span>資產負債</span></div>
-      <div class="b">
-        <h3>台北全真一對一信義分校　·　民國115年5月</h3>
-        <table>
-          <tr><td>營業收入淨額</td><td class="n">677,700</td></tr>
-          <tr><td>營業成本合計</td><td class="n">7,650</td></tr>
-          <tr class="key"><td>營業毛利</td><td class="n">670,050</td></tr>
-          <tr><td>營業費用合計</td><td class="n">451,426</td></tr>
-          <tr class="key"><td>營業淨利</td><td class="n">218,624</td></tr>
-          <tr><td>非營業淨利</td><td class="n">10,200</td></tr>
-          <tr class="key"><td>本期損益</td><td class="n">228,824</td></tr>
-        </table>
-      </div>
-    </div></div>
+    <div class="frame"><img src="shots/編輯.png" alt="損益表系統實際畫面:三欄式損益表即時計算本期損益"></div>
   </div></header>
 
   <section id="features"><div class="wrap">
@@ -170,77 +156,27 @@
     <div class="shots">
 
       <div class="shot-card">
-        <div class="frame"><div class="shot">
-          <div class="top"><i></i><i></i><i></i><span class="url">總覽</span></div>
-          <div class="tabs"><span class="on">總覽</span><span>編輯</span><span>年度</span><span>搜尋</span></div>
-          <div class="b">
-            <h3>台北全真一對一信義分校　·　民國115年5月</h3>
-            <div class="kmock">
-              <div class="k"><div class="kl">營業收入淨額</div><div class="kv">677,700</div></div>
-              <div class="k"><div class="kl">營業毛利</div><div class="kv">670,050</div><div class="ks">毛利率 98.9%</div></div>
-              <div class="k"><div class="kl">營業淨利</div><div class="kv">218,624</div><div class="ks">淨利率 32.3%</div></div>
-              <div class="k key"><div class="kl">本期損益</div><div class="kv">228,824</div><div class="ks">占營收 33.8%</div></div>
-            </div>
-          </div>
-        </div></div>
+        <div class="frame"><img src="shots/總覽.png" alt="首頁總覽畫面:本月關鍵數字、近 6 月趨勢與費用組成圓餅" loading="lazy"></div>
         <div class="cap"><h3>首頁總覽</h3><p>一開啟就看到本月最重要的數字與比率,還有近 6 月趨勢與費用組成圓餅。</p></div>
       </div>
 
       <div class="shot-card">
-        <div class="frame"><div class="shot">
-          <div class="top"><i></i><i></i><i></i><span class="url">編輯</span></div>
-          <div class="tabs"><span>總覽</span><span class="on">編輯</span><span>年度</span><span>搜尋</span></div>
-          <div class="b">
-            <h3>損益表　·　直接填金額</h3>
-            <table>
-              <tr><td>學費收入</td><td class="n">677,700</td></tr>
-              <tr><td>師派支出(藍俊祺)</td><td class="n">7,650</td></tr>
-              <tr class="key"><td>營業毛利</td><td class="n">670,050</td></tr>
-              <tr><td>薪資支出</td><td class="n">451,426</td></tr>
-              <tr class="key"><td>營業淨利</td><td class="n">218,624</td></tr>
-              <tr class="key"><td>本期損益</td><td class="n">228,824</td></tr>
-            </table>
-          </div>
-        </div></div>
+        <div class="frame"><img src="shots/編輯.png" alt="編輯輸入畫面:三欄式損益表即時計算" loading="lazy"></div>
         <div class="cap"><h3>編輯輸入</h3><p>三欄式損益表,輸入金額即時計算;Enter 跳下一列、可從 Excel 貼整欄。</p></div>
       </div>
 
       <div class="shot-card">
-        <div class="frame"><div class="shot">
-          <div class="top"><i></i><i></i><i></i><span class="url">年度</span></div>
-          <div class="tabs"><span>總覽</span><span>編輯</span><span class="on">年度</span><span>搜尋</span></div>
-          <div class="b">
-            <h3>民國115年　·　12 個月一覽</h3>
-            <table>
-              <tr><td class="sub">項目</td><td class="n sub">3月</td><td class="n sub">4月</td><td class="n sub">5月</td><td class="n sub">全年合計</td></tr>
-              <tr><td>營業收入淨額</td><td class="n">612,400</td><td class="n">658,900</td><td class="n">677,700</td><td class="n">1,949,000</td></tr>
-              <tr><td>營業淨利</td><td class="n">201,300</td><td class="n">210,800</td><td class="n">218,624</td><td class="n">630,724</td></tr>
-              <tr class="key"><td>本期損益</td><td class="n">210,500</td><td class="n">220,100</td><td class="n">228,824</td><td class="n">659,424</td></tr>
-            </table>
-          </div>
-        </div></div>
+        <div class="frame"><img src="shots/年度.png" alt="年度總覽畫面:12 個月關鍵指標、全年合計與月趨勢" loading="lazy"></div>
         <div class="cap"><h3>年度總覽</h3><p>整年 12 個月關鍵指標並排 + 全年合計 + 月趨勢,年底結算一目了然。</p></div>
       </div>
 
       <div class="shot-card">
-        <div class="frame"><div class="shot">
-          <div class="top"><i></i><i></i><i></i><span class="url">搜尋</span></div>
-          <div class="tabs"><span>總覽</span><span>編輯</span><span>年度</span><span class="on">搜尋</span></div>
-          <div class="b">
-            <h3>搜尋「藍俊祺」　·　共 3 筆,合計 22,950</h3>
-            <table>
-              <tr><td class="sub">期間</td><td class="sub">分類</td><td class="n sub">金額</td></tr>
-              <tr><td>民國115年3月</td><td>營業成本類</td><td class="n">7,650</td></tr>
-              <tr><td>民國115年4月</td><td>營業成本類</td><td class="n">7,650</td></tr>
-              <tr><td>民國115年5月</td><td>營業成本類</td><td class="n">7,650</td></tr>
-            </table>
-          </div>
-        </div></div>
+        <div class="frame"><img src="shots/搜尋.png" alt="跨期搜尋畫面:某老師在各月的金額與合計" loading="lazy"></div>
         <div class="cap"><h3>跨期搜尋</h3><p>輸入老師或科目,馬上列出各月金額與合計,查帳對帳超方便。</p></div>
       </div>
 
     </div>
-    <div class="note">提示:以上為介面示意,實際數字以你輸入的資料為準。App 內附「<b class="accent">逐步操作導覽</b>」與「<b class="accent">使用說明</b>」,新手也能快速上手。</div>
+    <div class="note">以上為實際操作畫面(示範資料)。App 內附「<b class="accent">逐步操作導覽</b>」與「<b class="accent">使用說明</b>」,新手也能快速上手。</div>
   </div></section>
 
   <section id="how"><div class="wrap">
