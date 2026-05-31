@@ -50,9 +50,13 @@
   .frame{max-width:780px;margin:54px auto 0;border:1px solid var(--line);border-radius:16px;
      background:var(--s1);padding:10px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
   .shot{background:#fff;border-radius:9px;overflow:hidden;color:#0d253d;text-align:left}
-  .shot .top{display:flex;gap:7px;padding:11px 14px;background:#f6f9fc;border-bottom:1px solid #e3e8ee}
+  .shot .top{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#f6f9fc;border-bottom:1px solid #e3e8ee}
   .shot .top i{width:11px;height:11px;border-radius:50%;background:#d6dbe3}
-  .shot .b{padding:20px 26px}
+  .shot .top .url{margin-left:10px;font-size:12px;color:#64748d}
+  .shot .tabs{display:flex;gap:4px;padding:8px 14px 0;flex-wrap:wrap;background:#fff}
+  .shot .tabs span{font-size:12px;color:#64748d;padding:5px 10px;border-radius:7px 7px 0 0}
+  .shot .tabs span.on{background:#533afd;color:#fff}
+  .shot .b{padding:18px 26px}
   .shot h3{margin:0 0 14px;font-size:15px;color:#0d253d}
   .shot table{width:100%;border-collapse:collapse;font-size:13.5px}
   .shot td{padding:7px 4px;border-bottom:1px solid #eef1f5}
@@ -96,7 +100,7 @@
   </div>
 
   <header class="hero"><div class="wrap">
-    <span class="badge">v1.0.3　·　專為補習班打造</span>
+    <span class="badge">v1.0.4　·　專為補習班打造</span>
     <h1>記帳更快,<br><span class="accent">股東檢視更清楚</span></h1>
     <p class="lead">輕巧、專業的桌面損益表軟體。即時計算、多分校、季報與趨勢、預算對比、資產負債表。取代 Excel,免安裝、可離線、會自動更新。</p>
     <a class="btn" href="https://github.com/jerry200176-png/income-statement-app-releases/releases/latest/download/income-statement.exe">⬇ 免費下載 Windows 版</a>
@@ -104,7 +108,8 @@
     <div class="meta">免安裝　·　離線可用　·　自動更新　·　Windows 10 / 11</div>
 
     <div class="frame"><div class="shot">
-      <div class="top"><i></i><i></i><i></i></div>
+      <div class="top"><i></i><i></i><i></i><span class="url">損益表系統 — 全真一對一</span></div>
+      <div class="tabs"><span class="on">編輯</span><span>比較</span><span>季報</span><span>趨勢圖</span><span>預算對比</span><span>資產負債表</span><span>現金流量表</span></div>
       <div class="b">
         <h3>台北全真一對一信義分校　·　民國115年5月</h3>
         <table>
@@ -160,7 +165,7 @@
   </div></div></section>
 
   <footer><div class="wrap">
-    損益表系統 v1.0.3　·　專為補習班設計的桌面損益表軟體<br>
+    損益表系統 v1.0.4　·　專為補習班設計的桌面損益表軟體<br>
     © 2026　·　資料離線儲存於本機,安全私密
   </div></footer>
 </body>
