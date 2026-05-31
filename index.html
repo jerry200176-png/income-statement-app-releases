@@ -62,6 +62,23 @@
   .shot td{padding:7px 4px;border-bottom:1px solid #eef1f5}
   .shot td.n{text-align:right;font-family:var(--num)}
   .shot tr.key td{background:#eef0ff;color:#4434d4;font-weight:700}
+  .shot td.sub{color:#64748d;font-size:11px}
+  .shot .pos{color:#1a7f55}
+  /* 操作畫面畫廊 */
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:24px;max-width:1080px;margin:0 auto}
+  .shot-card{display:flex;flex-direction:column}
+  .shot-card .frame{margin:0;max-width:none;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .shot-card .cap{margin-top:14px}
+  .shot-card .cap h3{margin:0 0 4px;font-size:17px;letter-spacing:-.2px}
+  .shot-card .cap p{margin:0;color:var(--ink-subtle);font-size:14px}
+  /* KPI 卡 mock */
+  .kmock{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .kmock .k{border:1px solid #e3e8ee;border-radius:10px;padding:12px 14px}
+  .kmock .k.key{background:#eef0ff;border-color:transparent}
+  .kmock .kl{font-size:11px;color:#64748d;margin-bottom:5px}
+  .kmock .kv{font-family:var(--num);font-size:19px;font-weight:700;color:#0d253d}
+  .kmock .k.key .kv{color:#4434d4}
+  .kmock .ks{font-size:10px;color:#64748d;margin-top:2px}
   /* sections */
   section{padding:72px 0;border-top:1px solid var(--line)}
   h2.sec{font-size:36px;letter-spacing:-1px;text-align:center;margin:0 0 10px;font-weight:600}
@@ -94,6 +111,7 @@
       <span class="name">損益表系統</span>
       <div class="links">
         <a href="#features">功能</a>
+        <a href="#screens">操作畫面</a>
         <a href="#how">如何使用</a>
         <a href="https://github.com/jerry200176-png/income-statement-app-releases/releases/latest/download/income-statement.exe" class="nav-cta">下載</a>
       </div>
@@ -101,7 +119,7 @@
   </div>
 
   <header class="hero"><div class="wrap">
-    <span class="badge">v1.2.1　·　專為補習班打造</span>
+    <span class="badge">v1.3.0　·　專為補習班打造</span>
     <h1>記帳更快,<br><span class="accent">股東檢視更清楚</span></h1>
     <p class="lead">輕巧、專業的桌面損益表軟體。首頁總覽、年度總覽、即時計算、多分校、季報與趨勢、預算對比、資產負債表。取代 Excel,免安裝、可離線、會自動更新。</p>
     <a class="btn" href="https://github.com/jerry200176-png/income-statement-app-releases/releases/latest/download/income-statement.exe">免費下載 Windows 版</a>
@@ -141,7 +159,88 @@
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v11M8 10l4 4 4-4M5 17v2a2 2 0 002 2h10a2 2 0 002-2v-2"/></svg></div><h3>Excel 匯入匯出</h3><p>舊有 Excel 損益表可直接匯入;報表可匯出 Excel、列印或存 PDF。</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 6h10M5 12h8M5 18h6"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="M17.5 15v1.6l1 .9"/></svg></div><h3>變更紀錄</h3><p>每次存檔自動記錄異動明細,帳務有跡可循、更可信。</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2 5.7M20 4v5h-5"/></svg></div><h3>自動更新</h3><p>有新版自動提示,按一下自動下載、更新、重開;更新前還會自動備份。</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 17v.01M12 13a2.5 2.5 0 10-2.3-3.5"/></svg></div><h3>新手友善</h3><p>內建「逐步操作導覽」會圈出每個功能怎麼用,加上詳細「使用說明」,不用教也會。</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3V4zM8 9h8M8 12h5"/></svg></div><h3>一鍵問題回報</h3><p>遇到狀況按「問題回報」,自動整理版本與錯誤資訊,複製貼到 LINE 或直接開 GitHub 回報。</p></div>
     </div>
+  </div></section>
+
+  <section id="screens"><div class="wrap">
+    <h2 class="sec">實際操作畫面</h2>
+    <p class="subsec">每個分頁長這樣,一看就懂</p>
+    <div class="shots">
+
+      <div class="shot-card">
+        <div class="frame"><div class="shot">
+          <div class="top"><i></i><i></i><i></i><span class="url">總覽</span></div>
+          <div class="tabs"><span class="on">總覽</span><span>編輯</span><span>年度</span><span>搜尋</span></div>
+          <div class="b">
+            <h3>台北全真一對一信義分校　·　民國115年5月</h3>
+            <div class="kmock">
+              <div class="k"><div class="kl">營業收入淨額</div><div class="kv">677,700</div></div>
+              <div class="k"><div class="kl">營業毛利</div><div class="kv">670,050</div><div class="ks">毛利率 98.9%</div></div>
+              <div class="k"><div class="kl">營業淨利</div><div class="kv">218,624</div><div class="ks">淨利率 32.3%</div></div>
+              <div class="k key"><div class="kl">本期損益</div><div class="kv">228,824</div><div class="ks">占營收 33.8%</div></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="cap"><h3>首頁總覽</h3><p>一開啟就看到本月最重要的數字與比率,還有近 6 月趨勢與費用組成圓餅。</p></div>
+      </div>
+
+      <div class="shot-card">
+        <div class="frame"><div class="shot">
+          <div class="top"><i></i><i></i><i></i><span class="url">編輯</span></div>
+          <div class="tabs"><span>總覽</span><span class="on">編輯</span><span>年度</span><span>搜尋</span></div>
+          <div class="b">
+            <h3>損益表　·　直接填金額</h3>
+            <table>
+              <tr><td>學費收入</td><td class="n">677,700</td></tr>
+              <tr><td>師派支出(藍俊祺)</td><td class="n">7,650</td></tr>
+              <tr class="key"><td>營業毛利</td><td class="n">670,050</td></tr>
+              <tr><td>薪資支出</td><td class="n">451,426</td></tr>
+              <tr class="key"><td>營業淨利</td><td class="n">218,624</td></tr>
+              <tr class="key"><td>本期損益</td><td class="n">228,824</td></tr>
+            </table>
+          </div>
+        </div></div>
+        <div class="cap"><h3>編輯輸入</h3><p>三欄式損益表,輸入金額即時計算;Enter 跳下一列、可從 Excel 貼整欄。</p></div>
+      </div>
+
+      <div class="shot-card">
+        <div class="frame"><div class="shot">
+          <div class="top"><i></i><i></i><i></i><span class="url">年度</span></div>
+          <div class="tabs"><span>總覽</span><span>編輯</span><span class="on">年度</span><span>搜尋</span></div>
+          <div class="b">
+            <h3>民國115年　·　12 個月一覽</h3>
+            <table>
+              <tr><td class="sub">項目</td><td class="n sub">3月</td><td class="n sub">4月</td><td class="n sub">5月</td><td class="n sub">全年合計</td></tr>
+              <tr><td>營業收入淨額</td><td class="n">612,400</td><td class="n">658,900</td><td class="n">677,700</td><td class="n">1,949,000</td></tr>
+              <tr><td>營業淨利</td><td class="n">201,300</td><td class="n">210,800</td><td class="n">218,624</td><td class="n">630,724</td></tr>
+              <tr class="key"><td>本期損益</td><td class="n">210,500</td><td class="n">220,100</td><td class="n">228,824</td><td class="n">659,424</td></tr>
+            </table>
+          </div>
+        </div></div>
+        <div class="cap"><h3>年度總覽</h3><p>整年 12 個月關鍵指標並排 + 全年合計 + 月趨勢,年底結算一目了然。</p></div>
+      </div>
+
+      <div class="shot-card">
+        <div class="frame"><div class="shot">
+          <div class="top"><i></i><i></i><i></i><span class="url">搜尋</span></div>
+          <div class="tabs"><span>總覽</span><span>編輯</span><span>年度</span><span class="on">搜尋</span></div>
+          <div class="b">
+            <h3>搜尋「藍俊祺」　·　共 3 筆,合計 22,950</h3>
+            <table>
+              <tr><td class="sub">期間</td><td class="sub">分類</td><td class="n sub">金額</td></tr>
+              <tr><td>民國115年3月</td><td>營業成本類</td><td class="n">7,650</td></tr>
+              <tr><td>民國115年4月</td><td>營業成本類</td><td class="n">7,650</td></tr>
+              <tr><td>民國115年5月</td><td>營業成本類</td><td class="n">7,650</td></tr>
+            </table>
+          </div>
+        </div></div>
+        <div class="cap"><h3>跨期搜尋</h3><p>輸入老師或科目,馬上列出各月金額與合計,查帳對帳超方便。</p></div>
+      </div>
+
+    </div>
+    <div class="note">提示:以上為介面示意,實際數字以你輸入的資料為準。App 內附「<b class="accent">逐步操作導覽</b>」與「<b class="accent">使用說明</b>」,新手也能快速上手。</div>
   </div></section>
 
   <section id="how"><div class="wrap">
@@ -168,7 +267,7 @@
   </div></div></section>
 
   <footer><div class="wrap">
-    損益表系統 v1.2.1　·　專為補習班設計的桌面損益表軟體<br>
+    損益表系統 v1.3.0　·　專為補習班設計的桌面損益表軟體<br>
     © 2026　·　資料離線儲存於本機,安全私密
   </div></footer>
 </body>
